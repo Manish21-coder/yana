@@ -53,7 +53,7 @@ const Services = () => {
     //   duration: '30-60 minutes'
     // },
      {
-      id: 'mri',
+      id: 'ECHO',
       title: 'ECHO',
       image: 'https://images.unsplash.com/photo-1576671414121-aa0c81c869e1',
       icon: 'fas fa-magnet',
@@ -67,7 +67,7 @@ const Services = () => {
       duration: '30-60 minutes'
     },
  {
-      id: 'ct',
+      id: 'ECG',
       title: 'ECG (Electrocardiogram)',
       image: 'https://images.unsplash.com/photo-1666214280352-db292c05fd80',
       icon: 'fas fa-laptop-medical',
@@ -155,7 +155,7 @@ const Services = () => {
                       <i className="far fa-clock text-yana-orange mr-2"></i>
                       <span className="text-gray-600">Average duration: {service.duration}</span>
                     </div>
-                    <Link
+                    {/* <Link
                       to="/book"
                       className="inline-flex items-center text-sm font-medium text-yana-orange hover:text-yana-orange-dark"
                     >
@@ -163,7 +163,20 @@ const Services = () => {
                       <svg className="ml-1 w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
-                    </Link>
+                    </Link> */}
+
+                    <a href="tel:+919900500950"  className="inline-flex items-center text-sm font-medium text-yana-orange hover:text-yana-orange-dark"
+                    >
+                      Book Now
+                      <svg className="ml-1 w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </a>
+
                   </div>
                 </div>
               </div>
@@ -209,7 +222,7 @@ const Services = () => {
                       <i className="far fa-clock text-yana-orange mr-2"></i>
                       <span className="text-gray-600">Average duration: {service.duration}</span>
                     </div>
-                    <Link
+                    {/* <Link
                       to="/book"
                       className="inline-flex items-center text-sm font-medium text-yana-orange hover:text-yana-orange-dark"
                     >
@@ -217,7 +230,22 @@ const Services = () => {
                       <svg className="ml-1 w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
-                    </Link>
+                    </Link> */}
+                      <a
+                        href="tel:+919900500950"
+                        className="inline-flex items-center text-sm font-medium text-yana-orange hover:text-yana-orange-dark"
+                      >
+                        Book Now
+                        <svg className="ml-1 w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                          <path
+                            fillRule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </a>
+
+
                   </div>
                 </div>
               </div>
@@ -334,7 +362,7 @@ const Services = () => {
             Our team is ready to provide you with the diagnostic services you need. 
             Book a consultation today and take the first step towards better health.
           </p>
-          <Link
+          {/* <Link
             to="/book"
             className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-yana-orange bg-white hover:bg-gray-100"
           >
@@ -342,7 +370,22 @@ const Services = () => {
             <svg className="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-          </Link>
+          </Link> */}
+
+          <a
+            href="tel:+919900500950"
+            className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-yana-orange bg-white hover:bg-gray-100"
+          >
+            Book Consultation
+            <svg className="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fillRule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
+
         </div>
       </section>
     </div>

@@ -112,15 +112,23 @@
 } */
 
 .bg-gradient-animated {
-  background: linear-gradient(-45deg, #a18cd1, #d4ccf5, #b2f0b2, #d4ccf5);
-  background-size: 600% 600%;
-  animation: gradientFlow 15s ease infinite;
+  background: linear-gradient(-45deg,
+  #4F23A9,   /* deep purple */
+    #d4ccf5,   /* soft lavender */
+    #a18cd1,   /* muted lavender */
+    #c0f2f2,   /* light cyan */
+    #e6ddfb,   /* light lavender */
+    #4F23A9,   /* deep purple again */
+    #c0f2f2,   /* light cyan again */
+    #d4ccf5    /* soft lavender to loop back */
+  );
+  background-size: 800% 800%;
+  animation: gradientFlow 40s ease-in-out infinite alternate;
 }
-
 
 @keyframes gradientFlow {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 50%, 100% 50%;
   }
   50% {
     background-position: 100% 50%;
@@ -129,3 +137,4 @@
     background-position: 0% 50%;
   }
 }
+

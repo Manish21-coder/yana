@@ -1,41 +1,57 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-  });
-  const [submitted, setSubmitted] = useState(false);
+const [formData, setFormData] = useState({
+  name: '',
+  email: '',
+  phone: '',
+  subject: '',
+  message: ''
+});
+const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData(prev => ({ ...prev, [name]: value }));
+};
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // In a real application, you would send this data to your backend
-    setSubmitted(true);
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
-    // Reset the submitted state after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 5000);
-  };
+
+
+//   const [formData, setFormData] = useState({
+//     name: '',
+//     email: '',
+//     phone: '',
+//     subject: '',
+//     message: ''
+//   });
+//   const [submitted, setSubmitted] = useState(false);
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData(prevState => ({
+//       ...prevState,
+//       [name]: value
+//     }));
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     console.log('Form submitted:', formData);
+//     // In a real application, you would send this data to your backend
+//     setSubmitted(true);
+//     // Reset form after submission
+//     setFormData({
+//       name: '',
+//       email: '',
+//       phone: '',
+//       subject: '',
+//       message: ''
+//     });
+//     // Reset the submitted state after 5 seconds
+//     setTimeout(() => {
+//       setSubmitted(false);
+//     }, 5000);
+//   };
 
   return (
     <div className="pt-20">
@@ -56,7 +72,8 @@ const Contact = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+
+            {/* <div className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-yana-orange bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-map-marker-alt text-yana-orange text-xl"></i>
               </div>
@@ -64,29 +81,204 @@ const Contact = () => {
               <p className="text-gray-600">
                 #549, Ground floor, 14th Main, Sector 7, HSR Layout, Bangalore, Karnataka, 560102
               </p>
-            </div>
+            </div> */}
+
+              <a 
+                href="https://www.google.com/maps?q=12.90867292326924,77.63764728297976" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow cursor-pointer"
+              >
+                <div className="w-16 h-16 bg-yana-orange bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i className="fas fa-map-marker-alt text-yana-orange text-xl"></i>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Visit Us</h3>
+                <p className="text-gray-600">
+                  #549, Ground floor, 14th Main, Sector 7, HSR Layout, Bangalore, Karnataka, 560102
+                </p>
+              </a>
+
+
             
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            {/* <div className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-yana-orange bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-phone-alt text-yana-orange text-xl"></i>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
               <p className="text-gray-600">For Appointments: +91 9900500950</p>
-            </div>
+            </div> */}
+
+            <a href="tel:+919900500950" className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow cursor-pointer">
+                <div >
+                  <div className="w-16 h-16 bg-yana-orange bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i className="fas fa-phone-alt text-yana-orange text-xl"></i>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
+                  <p className="text-gray-600">For Appointments: +91 9900500950</p>
+                </div>
+              </a>
+
             
-            <div className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            {/* <div className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-yana-orange bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-envelope text-yana-orange text-xl"></i>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
               <p className="text-gray-600 mb-2">General Inquiries: info@myyanahealth.com</p>
 
-            </div>
+            </div> */}
+          <a 
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=info@myyanahealth.com&su=Appointment%20Request&body=Hello%20YANA%20team," 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow cursor-pointer"
+      >
+        <div>
+          <div className="w-16 h-16 bg-yana-orange bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i className="fas fa-envelope text-yana-orange text-xl"></i>
+          </div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
+          <p className="text-gray-600 mb-2">General Inquiries: info@myyanahealth.com</p>
+        </div>
+      </a>
+
+
+
+
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form */}
             <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+
+              {submitted && (
+                <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
+                  <p className="font-bold">Thank you!</p>
+                  <p>Your message has been sent successfully. We'll get back to you soon.</p>
+                </div>
+              )}
+
+              <form
+                action="https://formspree.io/f/xovlaler"
+                method="POST"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const form = e.target;
+                  fetch(form.action, {
+                    method: form.method,
+                    body: new FormData(form),
+                    headers: {
+                      Accept: "application/json"
+                    }
+                  }).then(() => {
+                    setSubmitted(true);
+                    setFormData({
+                      name: '',
+                      email: '',
+                      phone: '',
+                      subject: '',
+                      message: ''
+                    });
+                    setTimeout(() => setSubmitted(false), 5000);
+                  }).catch((error) => {
+                    console.error("Form submission error:", error);
+                  });
+                }}
+                className="space-y-6"
+              >
+                <input type="hidden" name="_subject" value={formData.subject} />
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yana-orange focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yana-orange focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yana-orange focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                      Subject *
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yana-orange focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                    Message *
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yana-orange focus:border-transparent"
+                  ></textarea>
+                </div>
+
+                <div>
+                  <button
+                    type="submit"
+                    className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-yana-orange hover:bg-yana-orange-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yana-orange"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+
+
+
+            {/* <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
               
               {submitted && (
@@ -179,8 +371,10 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
-            </div>
+            </div> */}
             
+
+
             {/* Map */}
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Location</h2>

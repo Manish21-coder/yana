@@ -54,15 +54,22 @@ const Navbar = () => {
             <NavLink to="/" scrolled={scrolled}>Home</NavLink>
             <NavLink to="/about" scrolled={scrolled}>About Us</NavLink>
             <NavLink to="/services" scrolled={scrolled}>Services</NavLink>
-            <NavLink to="/blog" scrolled={scrolled}>Blog</NavLink>
+            {/* <NavLink to="/blog" scrolled={scrolled}>Blog</NavLink> */}
             <NavLink to="/faq" scrolled={scrolled}>FAQ</NavLink>
             <NavLink to="/contact" scrolled={scrolled}>Contact</NavLink>
-            <Link 
+            {/* <Link 
               to="/book" 
               className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-yana-orange hover:bg-yana-orange-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yana-orange"
             >
               Book Consultation
-            </Link>
+            </Link> */}
+
+            <a
+              href="tel:+919900500950"
+              className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-yana-orange hover:bg-yana-orange-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yana-orange"
+            >
+              Book Consultation
+            </a>
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -92,15 +99,23 @@ const Navbar = () => {
             <MobileNavLink to="/">Home</MobileNavLink>
             <MobileNavLink to="/about">About Us</MobileNavLink>
             <MobileNavLink to="/services">Services</MobileNavLink>
-            <MobileNavLink to="/blog">Blog</MobileNavLink>
+            {/* <MobileNavLink to="/blog">Blog</MobileNavLink> */}
             <MobileNavLink to="/faq">FAQ</MobileNavLink>
             <MobileNavLink to="/contact">Contact</MobileNavLink>
-            <Link
+            {/* <Link
               to="/book"
               className="block w-full text-center mt-3 px-4 py-2 text-base font-medium text-white bg-yana-orange hover:bg-yana-orange-dark rounded-md"
             >
               Book Consultation
-            </Link>
+            </Link> */}
+
+            <a
+              href="tel:+919900500950"
+              className="block w-full text-center mt-3 px-4 py-2 text-base font-medium text-white bg-yana-orange hover:bg-yana-orange-dark rounded-md"
+            >
+              Book Consultation
+            </a>
+
           </div>
         </div>
       )}

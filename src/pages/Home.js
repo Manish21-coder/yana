@@ -136,7 +136,7 @@ const Home = () => {
   <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
 
   {/* Content */}
-  <div className="container mx-auto px-6 relative z-20 pt-32">
+  <div className="container mx-auto px-6 relative z-20 ">
     <div className="max-w-3xl text-center mx-auto">
       {/* <h1
         className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-poppins"
@@ -180,7 +180,9 @@ const Home = () => {
 </p>
 
       <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-        <Link
+        {
+       /* need to remove when direct call need to be removed
+         <Link
           to="/book"
           className="inline-flex justify-center items-center py-3 px-6 text-base font-medium rounded-md text-white bg-yana-orange hover:bg-yana-orange-dark"
         >
@@ -192,7 +194,23 @@ const Home = () => {
               clipRule="evenodd"
             />
           </svg>
-        </Link>
+        </Link> */}
+
+         <a
+            href="tel:+919900500950"
+            className="inline-flex justify-center items-center py-3 px-6 text-base font-medium rounded-md text-white bg-yana-orange hover:bg-yana-orange-dark"
+          >
+            Book Consultation
+            <svg className="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fillRule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
+
+
         <Link
           to="/services"
           className="inline-flex justify-center items-center py-3 px-6 text-base font-medium rounded-md text-yana-orange bg-white hover:bg-gray-100"
@@ -341,7 +359,7 @@ const Home = () => {
           <p className="text-xl text-white max-w-3xl mx-auto mb-8">
             Our team is ready to assist you. Book a consultation today and take the first step towards better health.
           </p>
-          <Link
+          {/* <Link
             to="/book"
             className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-yana-orange bg-white hover:bg-gray-100"
           >
@@ -349,7 +367,24 @@ const Home = () => {
             <svg className="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-          </Link>
+          </Link> */}
+        <a
+            href="tel:+919900500950"
+            className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-yana-orange bg-white hover:bg-gray-100"
+          >
+            Book Now
+            <svg className="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fillRule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
+
+
+
+
         </div>
       </section>
     </>
