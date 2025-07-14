@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="flex items-center mb-4">
               {/* Use your actual logo here */}
-              <div className="rounded-xl p-3 bg-gradient-to-br from-white/70 via-white/50 to-white/40 shadow-md backdrop-blur-sm">
+              <div className="rounded-xl p-3 bg-gradient-to-br from-white/100 via-white/70 to-white/100 shadow-md backdrop-blur-sm">
               <img 
                 src="/images/Logos/YANA_Primary Logo.png" 
                 alt="YANA Logo" 
@@ -49,7 +49,7 @@ const Footer = () => {
               <li><Link to="/" className="text-gray-300 hover:text-yana-orange transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-300 hover:text-yana-orange transition-colors">About Us</Link></li>
               <li><Link to="/services" className="text-gray-300 hover:text-yana-orange transition-colors">Services</Link></li>
-              <li><Link to="/blog" className="text-gray-300 hover:text-yana-orange transition-colors">Blog</Link></li>
+              {/* <li><Link to="/blog" className="text-gray-300 hover:text-yana-orange transition-colors">Blog</Link></li> */}
               <li><Link to="/faq" className="text-gray-300 hover:text-yana-orange transition-colors">FAQ</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-yana-orange transition-colors">Contact</Link></li>
             </ul>
@@ -61,9 +61,11 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/services" className="text-gray-300 hover:text-yana-orange transition-colors">Ultrasound</Link></li>
               <li><Link to="/services" className="text-gray-300 hover:text-yana-orange transition-colors">X-Ray</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-yana-orange transition-colors">MRI</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-yana-orange transition-colors">CT Scan</Link></li>
-              <li><Link to="/book" className="text-gray-300 hover:text-yana-orange transition-colors">Book Consultation</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-yana-orange transition-colors">ECHO</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-yana-orange transition-colors">ECG</Link></li>
+
+              {/* <li><Link to="/book" className="text-gray-300 hover:text-yana-orange transition-colors">Book Consultation</Link></li> */}
+            <li> <a href="tel:+919900500950" className="text-gray-300 hover:text-yana-orange transition-colors">Book Consultation </a> </li>
             </ul>
           </div>
           
@@ -71,7 +73,7 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <i className="fas fa-map-marker-alt text-yana-orange mt-1 mr-3"></i>
                 <span className="text-gray-300">#549, Ground floor, 14th Main, Sector 7, HSR Layout, Bangalore, Karnataka, 560102</span>
               </li>
@@ -82,7 +84,44 @@ const Footer = () => {
               <li className="flex items-start">
                 <i className="fas fa-envelope text-yana-orange mt-1 mr-3"></i>
                 <span className="text-gray-300">info@myyanahealth.com</span>
+              </li> */}
+              <li className="flex items-start">
+                <i className="fas fa-map-marker-alt text-yana-orange mt-1 mr-3"></i>
+                <a
+                  href="https://www.google.com/maps?q=549,+14th+Main,+Sector+7,+HSR+Layout,+Bangalore,+Karnataka+560102"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-yana-orange transition-colors"
+                >
+                  #549, Ground floor, 14th Main, Sector 7, HSR Layout, Bangalore, Karnataka, 560102
+                </a>
               </li>
+
+              <li className="flex items-start">
+                <i className="fas fa-phone-alt text-yana-orange mt-1 mr-3"></i>
+                <a
+                  href="tel:+919900500950"
+                  className="text-gray-300 hover:text-yana-orange transition-colors"
+                >
+                  +91 9900500950
+                </a>
+              </li>
+
+              <li className="flex items-start">
+                <i className="fas fa-envelope text-yana-orange mt-1 mr-3"></i>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=info@myyanahealth.com&su=Appointment%20Request&body=Hello%20YANA%20team,"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-yana-orange transition-colors"
+                >
+                  info@myyanahealth.com
+                </a>
+              </li>
+
+
+
+
               <li className="flex items-start">
                 <i className="fas fa-clock text-yana-orange mt-1 mr-3"></i>
                 <span className="text-gray-300">Mon-Sun: 8am - 10pm</span>
